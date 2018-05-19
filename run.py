@@ -1,3 +1,4 @@
+#!coding:utf-8
 '''
     此处存放后台接口，由于目前接口较少
 '''
@@ -105,12 +106,12 @@ def showHtml(filename):
 
 
 # 查询验证码并返回
-@app.route('/getVerifyCode')
-def getVerify(mobile="18516600716"):
-    rt = {'code': None}
-    db = MysqlDb(app.config['DBNAME'])
-    rt.update(dict(code=db.getVerifyCode(mobile)))
-    return jsonify(rt)
+# @app.route('/getVerifyCode')
+# def getVerify(mobile="18516600716"):
+#     rt = {'code': None}
+#     db = MysqlDb(app.config['DBNAME'])
+#     rt.update(dict(code=db.getVerifyCode(mobile)))
+#     return jsonify(rt)
 
 
 @app.route('/delUser')

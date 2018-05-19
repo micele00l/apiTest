@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'Woody'
 '''存放功能函数的类
 '''

@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'Woody'
 import mysql.connector as mysql
 from initial import app
@@ -49,19 +50,16 @@ class MysqlDb(object):
         return rv
 
 
-    def getVerifyMsg(self, mobile):
-        return
-
-    def getVerifyCode(self, mobile=app.config['TESTER']):
-        sql = 'select smsBody from {} where mobile=%s order by smsLogId desc limit 1'.format(self.sms_table)
-        rv = self.query(sql, params=(mobile, ))
-        msg = rv[0][0] if rv else None
-        if msg:
-            rt = re.findall(r'[\d]+', msg)
-            if rt:
-                return rt[0]
-            else:
-                return None
+    # def getVerifyCode(self, mobile=app.config['TESTER']):
+    #     sql = 'select smsBody from {} where mobile=%s order by smsLogId desc limit 1'.format(self.sms_table)
+    #     rv = self.query(sql, params=(mobile, ))
+    #     msg = rv[0][0] if rv else None
+    #     if msg:
+    #         rt = re.findall(r'[\d]+', msg)
+    #         if rt:
+    #             return rt[0]
+    #         else:
+    #             return None
 
     def delete_user(self, mobile=app.config['TESTER']):
         sql = "delete from {} where phone={}".format(self.user_table, mobile)

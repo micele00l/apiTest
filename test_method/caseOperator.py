@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'Woody'
 import os
 from threading import Thread

@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'woody'
 '''配置类
 '''
@@ -6,7 +7,7 @@ import os
 
 class conf(dict):
     # 系统根目录
-    ROOT = r'E:\ApiTest'
+    ROOT = r'/home/a/apiTest'
 
     # 存放excel文件的目录
     WORKSPACE = os.path.join(ROOT, 'excel_data')
@@ -66,8 +67,8 @@ class conf(dict):
     LOCAL_HOST = 'localhost'
     LOCAL_PORT = '3306'
     LOCAL_USER = 'root'
-    LOCAL_PWD = 'wuranxu'
-    LOCAL_DB = 'test'
+    LOCAL_PWD = '1'
+    LOCAL_DB = 'userdb'
     CASE_TABLE = 'api'
     LOCAL_USER_TABLE = 'user'
     SECRET_KEY = 'xxx'

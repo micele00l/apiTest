@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'Woody'
 from initial import app
 from common.function import Operator, json

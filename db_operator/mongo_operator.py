@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'Woody'
 import pymongo
 from initial import app

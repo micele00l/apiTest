@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'Woody'
 from datetime import datetime
 from initial import app

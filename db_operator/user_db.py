@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'Woody'
 import mysql.connector as mysql
 from initial import app

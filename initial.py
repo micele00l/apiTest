@@ -1,3 +1,4 @@
+#!coding:utf-8
 __author__ = 'Woody'
 '''
     初始化app, 防止产生嵌套引用的问题
